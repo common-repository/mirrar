@@ -1,0 +1,464 @@
+/**
+ * All of the CSS for your admin-facing functionality should be
+ * included in this file.
+ */
+ *, *::before, *::after {
+     box-sizing: border-box;
+}
+ body{
+     margin: 0;
+}
+ .wall{
+     width: 100%;
+     float: left;
+}
+ .container{
+     max-width: 1200px;
+     margin: 0 auto;
+}
+ .form-group{
+     margin-bottom: 15px;
+}
+ .w-50{
+     width:50%;
+}
+ .w-25{
+     width:25%;
+}
+ .w-100{
+     width:100%;
+}
+ .float-left{
+     float:left;
+}
+ .float-right{
+     float:right;
+}
+ .clear{
+     clear: both;
+}
+ .FormInside .form-group>label,.BoxShdowText label {
+     font-size: 14px;
+     font-family: system-ui;
+     padding-bottom: 10px;
+     display: block;
+     font-weight: 600;
+     padding: 4px 0;
+}
+ .FormInside .form-group select.form-control, .SelectWtdh input[type="number"], .SelectWtdh input[type="Text"] {
+     height: 35px;
+     width: 100px;
+     border-radius: 4px;
+     font-size: 12px;
+     outline: 0 !important;
+     box-shadow: none !important;
+     margin: 0 auto;
+     display: block;
+     font-family: system-ui;
+     font-weight: 500;
+}
+.FormInside .form-group select.form-control.mirrar_change {
+    margin-left: 0;
+}
+ .onoffswitch2 .toggle {
+     position: relative;
+     display: block;
+     width: 100px;
+     height: 30px;
+     color: white;
+     outline: 0;
+     text-decoration: none;
+     border-radius: 100px;
+     border: 1px solid #cdcdcd;
+     background-color: #ffffff;
+     transition: all 500ms;
+     margin: 0 auto;
+}
+ .onoffswitch2 .toggle:active {
+     background-color: #e1e1e1;
+}
+ .onoffswitch2 .toggle:hover:not(.toggle-moving):after {
+     background-color: #e1e1e1;
+}
+ .onoffswitch2 .toggle:after {
+     display: block;
+     position: absolute;
+     top: -1px;
+     bottom: -1px;
+     left: -1px;
+     width: 50%;
+     line-height: 27px;
+     text-align: center;
+     text-transform: uppercase;
+     border: 2px solid;
+     transition: all 500ms;
+     font-size: 12px;
+     font-weight: 700 !important;
+     font-family: system-ui;
+}
+ .onoffswitch2 .toggle-on:after {
+     content: 'On';
+     border-radius: 50px 5px 5px 50px;
+     color: #ffffff;
+     background-color: #66BB6A !important;
+     border-color: #66BB6A !important;
+}
+ .onoffswitch2 .toggle-off:after {
+     content: 'Off';
+     border-radius: 5px 50px 50px 5px;
+     transform: translate(100%, 0);
+     color: #ffffff;
+     right: 48px;
+     left: unset;
+     background-color: #f44336 !important;
+     border-color: #f44336 !important;
+}
+ .onoffswitch2 .toggle-moving {
+     background-color: #e1e1e1;
+}
+ .onoffswitch2 .toggle-moving:after {
+     color: transparent;
+     border-color: #435862;
+     background-color: #222c31;
+     transition: color 0s, transform 500ms, border-radius 500ms, background-color 500ms;
+}
+ .onoffswitch2 input[type="checkbox"] {
+     appearance: none;
+     margin: 0;
+     display: none;
+}
+ .bdr-left {
+     border-left: 1px solid #bcbcbc;
+}
+ .p-3 {
+     padding: 10px 15px;
+}
+ .ball {
+     opacity: 1 !important;
+     background: rgb(0, 59, 166) !important;
+}
+ .bar ,.progressbar{
+     border-radius: 50px !important;
+}
+ .current-time,.duration {
+     position: absolute;
+     top: -20px;
+     left: -5px;
+     font-size: 12px;
+     font-weight: 600;
+     font-family: sans-serif;
+}
+ .duration{
+     right: 0px;
+     left: unset;
+}
+ .ClrPicker input[type="color"] {
+     border: 0;
+     background-color: #ff000000;
+     padding: 0px;
+     width: 60px;
+     height: 35px;
+     outline: 0 !important;
+     box-shadow: none !important;
+}
+ .SelectWtdh input[type="number"]{
+     float: left;
+     margin-right:5px;
+}
+ .SelectWtdh input[type="number"],.SelectWtdh input[type="Text"],.FormInside .form-group select.form-control, .SelectWtdh input[type="number"]{
+     border: 1px solid #b4b4b4;
+}
+ span.SpanIndictor {
+     font-size: 11px;
+     font-weight: 600;
+     bottom: -4px;
+     font-family: system-ui;
+}
+ .LeftInd{
+     left: 10%;
+}
+ .RightInd {
+     right: 34%;
+}
+ .NmbrInput input[type="number"] {
+     width: 23.1% !important;
+}
+ .TopInd2 {
+     left: 8%;
+}
+ .RightInd2 {
+     left: 32%;
+}
+ .BtmInd2 {
+     right: 32%;
+}
+ .LeftInd2 {
+     right: 10%;
+}
+ .HedingDiv h3 {
+     font-size: 17px;
+     font-family: sans-serif;
+     background: #3078fa;
+     color: #fff;
+     padding: 8px 5px;
+     margin-bottom: 0;
+     margin: 5px 0px;
+}
+ .RngeSliderHere .silder-wrap {
+     top: 10px;
+}
+ .EditBtnInsideHere{
+     height: 150px;
+     border: 10px solid #ddd;
+     text-align: center;
+     display: table;
+     margin: 10px 0px;
+}
+ .EditBtnInside {
+     display: table-cell;
+     vertical-align: middle;
+     float: none;
+}
+ .RightSide {
+     max-height: 475px;
+     overflow: auto;    
+}
+ section#ToggleForm {
+     background-color: #fff;
+     padding: 10px;
+}
+ .RightSide::-webkit-scrollbar-thumb{
+     border-radius: 20px !important;
+     background: linear-gradient(45deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+     box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+     overflow:hidden;
+}
+ .RightSide::-webkit-scrollbar-track{
+     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     border-radius: 20px !important;
+     overflow:hidden;
+}
+ .RightSide::-webkit-scrollbar{
+     width: 5px;
+     border-radius: 20px !important;
+     overflow:hidden;
+}
+.mirrar-submit-btn-wrapper #submit-form {
+    margin-right: 20px;
+    margin-top: 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 40px;
+    background: #28a745;
+    border-color: #28a745;
+}
+.mirrar-submit-btn-wrapper #submit-form:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+.mirrar-submit-btn-wrapper {
+    text-align: center;
+}
+select#mirrar_button_icon {
+    font-family: fontAwesome;
+}
+.mirrar-btn-shadow .TopInd2 {
+    left: 1%;
+}
+.mirrar-btn-shadow .RightInd2 {
+    left: 25%;
+}
+.mirrar-btn-shadow .BtmInd2 {
+    right: 34%;
+}
+.mirrar-btn-shadow .LeftInd2 {
+    right: 7%;
+}
+.mirrar-sync-button {
+    background-color: #007cba;
+    border: 1px solid #007cba;
+    color: #fff;
+    float: right;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    line-height: 12px;
+    cursor: pointer;
+    outline: none !important;
+}
+.d-none{
+    display:none !important;
+}
+span.success,span.error {
+    display: block;
+    width: 100%;
+    float: right;
+    text-align: right;
+    color: #19a200;
+    font-weight: 600;
+    font-size: 12px;
+}
+span.error{
+    color: #a20000 !important;
+}
+.icon_rotate{
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.rotate_down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.form-group.submit_btn_sec{
+    float: left;     
+    border-top: 1px solid #bcbcbc;
+}
+a#showAdvanceSetting {
+    font-size: 15px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 500;
+}
+.RngeSliderHere input[type="number"] {
+    width: 65px;
+}
+.mirrar-text-center{
+    text-align: center;
+}
+.display-block{
+    display: block;
+ }
+.SyncBtnSection {
+    background-color: #ebebeb;
+    padding: 20px;
+    border: 1px solid #cdcdcd;
+}
+.SyncBtnSection label {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.SyncBtnSection span.success, .SyncBtnSection span.error{
+    text-align: center;
+}
+.mirran_woo_checkbox_section {
+    display: none;
+}
+.mirrar_woo_settings {
+    display: block !important;
+}
+#mirrar_custom_sku, #mirrar_brand_id {
+    width: 100%;
+}
+.mirrar_additional_settings_container code {
+    padding: 3px 0;
+}
+/*--Media CSS-*/
+ @media(max-width: 1200px){
+     .container{
+         max-width: 970px;
+    }
+     .NmbrInput input[type="number"] {
+         width: 50px !important;
+    }
+     .TopInd2 {
+         left: 7%;
+    }
+     .RightInd2 {
+         left: 31%;
+    }
+     .BtmInd2 {
+         right: 31%;
+    }
+     .LeftInd2 {
+         right: 9%;
+    }
+     .LeftInd {
+         left: 13%;
+    }
+     .RightInd {
+         right: 16%;
+    }
+}
+ @media(max-width: 991px){
+     .container {
+         max-width: 750px;
+    }
+     .LeftSide {
+         width: 100%;
+    }
+     .FormInside .form-group select.form-control, .SelectWtdh input[type="number"], .SelectWtdh input[type="Text"] {
+         width: 170px;
+    }
+     .NmbrInput input[type="number"] {
+         width: 80px !important;
+    }
+     .BtmInd2 {
+         right: 36%;
+    }
+     .LeftInd2 {
+         right: 15%;
+    }
+     .TopInd2 {
+         left: 8%;
+    }
+     .bdr-left {
+         border-left: 0;
+    }
+}
+ @media(max-width: 767px){
+     .container {
+         max-width: 550px;
+    }
+     .FormInside .form-group select.form-control, .SelectWtdh input[type="number"], .SelectWtdh input[type="Text"] {
+         width: 122px;
+    }
+     .NmbrInput input[type="number"] {
+         width: 23% !important;
+    }
+     .BtmInd2 {
+         right: 32%;
+    }
+     .LeftInd2 {
+         right: 10%;
+    }
+}
+ @media(max-width: 575px){
+     .FormInside .form-group>label {
+         width: 100%;
+    }
+     .container {
+         max-width: 100%;
+         padding: 0px 10px;
+    }
+     .onoffswitch2.w-50,.SelectWtdh.w-50,.RngeSliderHere.w-50 {
+         width: 100%;
+    }
+     .onoffswitch2 .toggle {
+         float: left !important;
+    }
+     .FormInside .form-group select.form-control, .SelectWtdh input[type="number"], .SelectWtdh input[type="Text"] {
+         width: 100% !important;
+    }
+     .RngeSliderHere .silder-wrap {
+         width: 95%;
+         margin: 0 auto;
+         padding: 10px 0 5px 0;
+    }
+     .current-time, .duration {
+         top: -9px;
+    }
+     .SelectWtdh.SelectWtdh12 input[type="number"] {
+         width: calc(50% - 5px) !important;
+    }
+     .SelectWtdh.NmbrInput input[type="number"] {
+         width: calc(23% - -0px) !important;
+    }
+}
+ 

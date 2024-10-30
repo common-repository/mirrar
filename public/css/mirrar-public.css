@@ -1,0 +1,11 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .mirror-button-single .fa {
+    font-family: FontAwesome !important;
+    font-weight: normal !important;
+}
+.mirrar_multiple_sku__btn{
+    display :none;
+}
